@@ -1,0 +1,11 @@
+version: 0.2
+phases:
+  build:
+    commands:
+    - mvn clean install
+  post_build:
+    commands:
+    - mv target/spring-test-deploy-0.0.1-SNAPSHOT.jar spring-test-deploy-0.0.1-SNAPSHOT.jar
+artifacts:
+  files:
+  - spring-test-deploy-0.0.1-SNAPSHOT.jar
